@@ -1,0 +1,955 @@
+[    
+    {
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    },{
+        "CCloseTime": 0,
+        "CDistrict": "Q. Gò Vấp",
+        "CEmail": "sanphuongnam@gmail.com",
+        "CExpiredDate": "2015-05-06",
+        "CId": 17,
+        "CIsActive": true,
+        "CMainOwner": {
+            "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+            "CEmail": "sanphuongnam@gmail.com",
+            "CFullName": "Sân Phương Nam",
+            "CId": 6,
+            "CIsActive": true,
+            "CJoinDate": "2014-05-05",
+            "CPassword": "123456",
+            "CPhoneNumber": "0822149048",
+            "CPoint": 0,
+            "CRankId": {
+                "CId": 1,
+                "CPoint": 0,
+                "CRankName": "Người mới"
+            },
+            "CRoleId": {
+                "CDisplayName": "Stadium Owner",
+                "CId": 3,
+                "CRole": "StadiumOwner"
+            },
+            "CUserName": "sanphuongnam"
+        },
+        "CName": "Phương Nam 2",
+        "COpenTime": 0,
+        "CPhone": "0822149048",
+        "CStreet": "44/5 Phạm Văn Chiêu",
+        "CWard": "9"
+    }
+]

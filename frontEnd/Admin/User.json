@@ -1,0 +1,464 @@
+[
+  {
+    "CAddress": "51 Trần Hưng Đạo, 6, Quận 5, TP.Hồ Chí Minh",
+    "CEmail": "webmaster@fpb.com",
+    "CFullName": "Đặt Sân Bóng Đá Online",
+    "CId": 1,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "01662194419",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Website Master",
+      "CId": 1,
+      "CRole": "WebsiteMaster"
+    },
+    "CUserName": "admin"
+  },
+  {
+    "CAddress": "37 Nguyễn Văn Lượng, 10, Q. Gò Vấp, TP.Hồ Chí Minh",
+    "CEmail": "sanbongphuongdo@gmail.com",
+    "CFullName": "Phương Đô",
+    "CId": 2,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0918303875",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanphuongdo"
+  },
+  {
+    "CAddress": "119 Trần Văn Dư, 13, Q. Gò Vấp, TP.Hồ Chí Minh",
+    "CEmail": "sanbongk334@gmail.com",
+    "CFullName": "Sân K334",
+    "CId": 3,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "01213727414",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanbongk334"
+  },
+  {
+    "CAddress": "Đường số 20, 5, Q. Gò Vấp, TP. Hồ Chí Minh",
+    "CEmail": "sanhaison@gmail.com",
+    "CFullName": "Sân Hải Sơn",
+    "CId": 4,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0909277792",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanhaison"
+  },
+  {
+    "CAddress": "17 Cây Trâm, 11, Q. Gò Vấp, TP. Hồ Chí Minh",
+    "CEmail": "sanbinhan@gmail.com",
+    "CFullName": "Sân Bình An",
+    "CId": 5,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0862722830",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanbinhan"
+  },
+  {
+    "CAddress": "44/5 Phạm Văn Chiêu, 9, Q. Gò Vấp, TP. Hồ Chí Minh",
+    "CEmail": "sanphuongnam@gmail.com",
+    "CFullName": "Sân Phương Nam",
+    "CId": 6,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0822149048",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanphuongnam"
+  },
+  {
+    "CAddress": "18C Cộng hòa, 12, Q. Tân Bình, TP. Hồ Chí Minh",
+    "CEmail": "sana41@gmail.com",
+    "CFullName": "Sân A41",
+    "CId": 7,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0902386860",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sana41"
+  },
+  {
+    "CAddress": "367 Hoàng Hoa Thám, 12, Q. Tân Bình, TP. Hồ Chí Minh",
+    "CEmail": "san367@gmail.com",
+    "CFullName": "Sân 367",
+    "CId": 8,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "088117244",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "san367"
+  },
+  {
+    "CAddress": "4 Trường Chinh, 4, Q.Tân Bình, TP. Hồ Chí Minh",
+    "CEmail": "sanhoanggia@gmail.com",
+    "CFullName": "Sân Hoàng Gia",
+    "CId": 10,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0938948887",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanhoanggia"
+  },
+  {
+    "CAddress": "18C Cộng hòa, 4, Q. Tân Bình, TP. Hồ Chí Minh",
+    "CEmail": "sanhuynhtan@gmail.com",
+    "CFullName": "Sân Huỳnh Tấn",
+    "CId": 11,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0866589794",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanhuynhtan"
+  },
+  {
+    "CAddress": "18C Cộng Hòa, 12, Q. Tân Bình, TP. Hồ Chí Minh",
+    "CEmail": "sanchaolua@gmail.com",
+    "CFullName": "Sân Chảo Lửa",
+    "CId": 13,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0955800800",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanchaolua"
+  },
+  {
+    "CAddress": "21 Đào Duy Anh, 14, Q. Phú Nhuận, TP. Hồ Chí Minh",
+    "CEmail": "sandaoduyanh@gmail.com",
+    "CFullName": "Sân Đào Duy Anh",
+    "CId": 14,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0838447700",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sandaoduyanh"
+  },
+  {
+    "CAddress": "44 Đường D3, 25, Bình Thạnh, TP. HCM  ",
+    "CEmail": "sanbongd3@gmail.com",
+    "CFullName": "Sân D3",
+    "CId": 15,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0909060202",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanbongd3"
+  },
+  {
+    "CAddress": "161/3 Lũy Bán Bích, P. Hiệp Tân, Q.Tân Phú, TP. HCM",
+    "CEmail": "sanhieptan@gmail.com",
+    "CFullName": "Sân Hiệp Tân",
+    "CId": 16,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0909552255",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanhieptan"
+  },
+  {
+    "CAddress": "12 Đường 42, P.Linh Đông, Q.Thủ Đức, Tp.HCM",
+    "CEmail": "sansake@gmail.com",
+    "CFullName": "Sân Sake",
+    "CId": 17,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0979466161",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sansake"
+  },
+  {
+    "CAddress": "53 Võ Văn Ngân, P. Linh Chiểu, Q.Thủ Đức, TP. HCM",
+    "CEmail": "sancdcntd@gmail.com",
+    "CFullName": "Sân Cao Đẳng Công Nghệ Thủ Đức",
+    "CId": 19,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0979825050 ",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sancdcntd"
+  },
+  {
+    "CAddress": "281 Võ Văn Ngân, P. Linh Chiểu, Q.Thủ Đức, TP.HCM ",
+    "CEmail": "sanntntd@gmail.com",
+    "CFullName": "Sân Nhà Thiếu Nhi Thủ Đức",
+    "CId": 20,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0919709197",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Stadium Owner",
+      "CId": 3,
+      "CRole": "StadiumOwner"
+    },
+    "CUserName": "sanntntd"
+  },
+  {
+    "CAddress": "30 Phạm Văn Chiêu, phường 12, Gò Vấp, Hồ Chí Minh",
+    "CEmail": "phuongnd6592@live.com",
+    "CFullName": "Nguyễn Duy Phương",
+    "CId": 21,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "01662194419",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Member",
+      "CId": 5,
+      "CRole": "Member"
+    },
+    "CUserName": "phuongnd"
+  },
+  {
+    "CAddress": "406 Nguyễn Văn Công, 3, Gò Vấp, TP. Hồ Chí Minh",
+    "CEmail": "giangnhhse60606@fpt.edu.vn",
+    "CFullName": "Nguyễn Hữu Hoàng Giang",
+    "CId": 23,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0167378045",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Member",
+      "CId": 5,
+      "CRole": "Member"
+    },
+    "CUserName": "giangnhh"
+  },
+  {
+    "CAddress": "140 Phan Xích Long, 2, Q. Phú Nhuận, TP. Hồ Chí Minh",
+    "CEmail": "khanhnq60556@fpt.edu.vn",
+    "CFullName": "Nguyễn Quốc Khánh",
+    "CId": 24,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0935939792",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Member",
+      "CId": 5,
+      "CRole": "Member"
+    },
+    "CUserName": "khanhnq"
+  },
+  {
+    "CAddress": "13 Khổng Tử, P. Bình Thọ, Q. Thủ Đức, TP. Hồ Chí Minh",
+    "CEmail": "thinhnd60398@fpt.edu.vn",
+    "CFullName": "Nguyễn Đức Thịnh",
+    "CId": 25,
+    "CIsActive": true,
+    "CJoinDate": "2014-05-05",
+    "CPassword": "123456",
+    "CPhoneNumber": "0982555036",
+    "CPoint": 0,
+    "CRankId": {
+      "CId": 1,
+      "CPoint": 0,
+      "CRankName": "Người mới"
+    },
+    "CRoleId": {
+      "CDisplayName": "Member",
+      "CId": 5,
+      "CRole": "Member"
+    },
+    "CUserName": "thinhnd"
+  }
+]
