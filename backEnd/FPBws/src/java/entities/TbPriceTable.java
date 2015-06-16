@@ -38,8 +38,10 @@ public class TbPriceTable implements Serializable {
     @NotNull
     @Column(name = "c_Id")
     private Integer cId;
+    @Basic(optional = false)
+    @NotNull
     @Column(name = "c_Day")
-    private Integer cDay;
+    private int cDay;
     @Basic(optional = false)
     @NotNull
     @Column(name = "c_Price")
@@ -61,8 +63,9 @@ public class TbPriceTable implements Serializable {
         this.cId = cId;
     }
 
-    public TbPriceTable(Integer cId, double cPrice) {
+    public TbPriceTable(Integer cId, int cDay, double cPrice) {
         this.cId = cId;
+        this.cDay = cDay;
         this.cPrice = cPrice;
     }
 
@@ -74,11 +77,11 @@ public class TbPriceTable implements Serializable {
         this.cId = cId;
     }
 
-    public Integer getCDay() {
+    public int getCDay() {
         return cDay;
     }
 
-    public void setCDay(Integer cDay) {
+    public void setCDay(int cDay) {
         this.cDay = cDay;
     }
 

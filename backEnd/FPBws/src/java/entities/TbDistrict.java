@@ -42,7 +42,7 @@ public class TbDistrict implements Serializable {
     private Integer cId;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 50)
     @Column(name = "c_District")
     private String cDistrict;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cDistrictId")

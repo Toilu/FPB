@@ -38,7 +38,9 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "TbReservation.findByCEmail", query = "SELECT t FROM TbReservation t WHERE t.cEmail = :cEmail"),
     @NamedQuery(name = "TbReservation.findByCDate", query = "SELECT t FROM TbReservation t WHERE t.cDate = :cDate"),
     @NamedQuery(name = "TbReservation.findByCPrice", query = "SELECT t FROM TbReservation t WHERE t.cPrice = :cPrice"),
-    @NamedQuery(name = "TbReservation.findByCVerifyCode", query = "SELECT t FROM TbReservation t WHERE t.cVerifyCode = :cVerifyCode"),
+    @NamedQuery(name = "TbReservation.findByCPublicCode", query = "SELECT t FROM TbReservation t WHERE t.cPublicCode = :cPublicCode"),
+    @NamedQuery(name = "TbReservation.findByCPrivateCode", query = "SELECT t FROM TbReservation t WHERE t.cPrivateCode = :cPrivateCode"),
+    @NamedQuery(name = "TbReservation.findByCPayment", query = "SELECT t FROM TbReservation t WHERE t.cPayment = :cPayment"),
     @NamedQuery(name = "TbReservation.findByCCreatedDate", query = "SELECT t FROM TbReservation t WHERE t.cCreatedDate = :cCreatedDate")})
 public class TbReservation implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -73,9 +75,18 @@ public class TbReservation implements Serializable {
     private double cPrice;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 50)
-    @Column(name = "c_VerifyCode")
-    private String cVerifyCode;
+    @Size(min = 1, max = 20)
+    @Column(name = "c_PublicCode")
+    private String cPublicCode;
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 20)
+    @Column(name = "c_PrivateCode")
+    private String cPrivateCode;
+    @Basic(optional = false)
+    @NotNull
+    @Column(name = "c_Payment")
+    private boolean cPayment;
     @Basic(optional = false)
     @NotNull
     @Column(name = "c_CreatedDate")
@@ -95,14 +106,16 @@ public class TbReservation implements Serializable {
         this.cId = cId;
     }
 
-    public TbReservation(Integer cId, String cFullName, String cPhoneNumber, String cEmail, String cDate, double cPrice, String cVerifyCode, Date cCreatedDate) {
+    public TbReservation(Integer cId, String cFullName, String cPhoneNumber, String cEmail, String cDate, double cPrice, String cPublicCode, String cPrivateCode, boolean cPayment, Date cCreatedDate) {
         this.cId = cId;
         this.cFullName = cFullName;
         this.cPhoneNumber = cPhoneNumber;
         this.cEmail = cEmail;
         this.cDate = cDate;
         this.cPrice = cPrice;
-        this.cVerifyCode = cVerifyCode;
+        this.cPublicCode = cPublicCode;
+        this.cPrivateCode = cPrivateCode;
+        this.cPayment = cPayment;
         this.cCreatedDate = cCreatedDate;
     }
 
@@ -154,12 +167,28 @@ public class TbReservation implements Serializable {
         this.cPrice = cPrice;
     }
 
-    public String getCVerifyCode() {
-        return cVerifyCode;
+    public String getCPublicCode() {
+        return cPublicCode;
     }
 
-    public void setCVerifyCode(String cVerifyCode) {
-        this.cVerifyCode = cVerifyCode;
+    public void setCPublicCode(String cPublicCode) {
+        this.cPublicCode = cPublicCode;
+    }
+
+    public String getCPrivateCode() {
+        return cPrivateCode;
+    }
+
+    public void setCPrivateCode(String cPrivateCode) {
+        this.cPrivateCode = cPrivateCode;
+    }
+
+    public boolean getCPayment() {
+        return cPayment;
+    }
+
+    public void setCPayment(boolean cPayment) {
+        this.cPayment = cPayment;
     }
 
     public Date getCCreatedDate() {

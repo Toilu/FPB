@@ -47,7 +47,7 @@ public class TbSlot implements Serializable {
     private int cSlot;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 20)
     @Column(name = "c_Description")
     private String cDescription;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cSlot")
