@@ -104,20 +104,23 @@ function showItems() {
 
 	// window.alert(jsonObj[from].CMainOwner.CFullName);
 	for (var i = from; i < to; ++i) {
+		for (var j = 0; j < priceList.length; ++j) { // vòng for lấy giá tiền trong bảng pricelist
+			if (jsonObj[i].CFieldTypeId.CId == priceList[j].CFieldTypeId.CId) {
+				var index = i + 1
+					$('#dssb')
+					.html('Đặt Sân Bóng <b>' + jsonObj[i].CStadiumId.CName + '</b> Ngày: ' + date + ' - Thời Gian: ' + priceList[i].CSlot.CDescription);
+				$('#js')
+				.append('<tr><td><img src="' + images[i] + '" /></td>' +
+					'<td>Sân số ' + jsonObj[i].CNumber +
+					'</td><td><b>Sân ' + jsonObj[i].CFieldTypeId.CFieldType + ' Người' +
+					'</b></td><td><b>' + priceList[j].CPrice + 
+					'</b></td><td>' + jsonObj[i].CStadiumId.CPhone +
+					'</td><td><a href="Field.htm?stadiumId=' + jsonObj[i].CId + '" class="btn btn-link">Đặt Sân</a></td></tr>');
 
-		var index = i + 1
-			$('#dssb')
-			.html('Đặt Sân Bóng <b>' + jsonObj[i].CStadiumId.CName + '</b> Ngày: ' + date + ' - Thời Gian: ' + priceList[i].CSlot.CDescription);
-		$('#js')
-		.append('<tr><td><img src="' + images[i] + '" /></td>' +
-			'<td>' + jsonObj[i].CStadiumId.CName +
-			'</td><td>Sân số ' + jsonObj[i].CNumber +
-			'</td><td><b>Sân ' + jsonObj[i].CFieldTypeId.CFieldType + ' Người' +
-			'</b></td><td>' + jsonObj[i].CStadiumId.CPhone +
-			'</td><td><a href="Field.htm?stadiumId=' + jsonObj[i].CId + '" class="btn btn-link">Đặt Sân</a></td></tr>');
+			}
+		}
 
 	}
-
 }
 
 function showPagers() {
