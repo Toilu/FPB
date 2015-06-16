@@ -79,7 +79,9 @@ public class TbJoinSystemRequest implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "c_StadiumAddress")
     private String cStadiumAddress;
-    @Size(max = 1000)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 1000)
     @Column(name = "c_Note")
     private String cNote;
     @Basic(optional = false)
@@ -103,7 +105,7 @@ public class TbJoinSystemRequest implements Serializable {
         this.cId = cId;
     }
 
-    public TbJoinSystemRequest(Integer cId, String cFullName, String cAddress, String cPhone, String cEmail, String cStadiumName, String cStadiumAddress, String cStatus, Date cCreateDate) {
+    public TbJoinSystemRequest(Integer cId, String cFullName, String cAddress, String cPhone, String cEmail, String cStadiumName, String cStadiumAddress, String cNote, String cStatus, Date cCreateDate) {
         this.cId = cId;
         this.cFullName = cFullName;
         this.cAddress = cAddress;
@@ -111,6 +113,7 @@ public class TbJoinSystemRequest implements Serializable {
         this.cEmail = cEmail;
         this.cStadiumName = cStadiumName;
         this.cStadiumAddress = cStadiumAddress;
+        this.cNote = cNote;
         this.cStatus = cStatus;
         this.cCreateDate = cCreateDate;
     }

@@ -45,7 +45,9 @@ public class TbSlot implements Serializable {
     @NotNull
     @Column(name = "c_Slot")
     private int cSlot;
-    @Size(max = 30)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 30)
     @Column(name = "c_Description")
     private String cDescription;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cSlot")
@@ -60,9 +62,10 @@ public class TbSlot implements Serializable {
         this.cId = cId;
     }
 
-    public TbSlot(Integer cId, int cSlot) {
+    public TbSlot(Integer cId, int cSlot, String cDescription) {
         this.cId = cId;
         this.cSlot = cSlot;
+        this.cDescription = cDescription;
     }
 
     public Integer getCId() {

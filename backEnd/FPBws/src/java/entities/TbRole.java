@@ -9,6 +9,7 @@ package entities;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -45,10 +46,12 @@ public class TbRole implements Serializable {
     @Size(min = 1, max = 50)
     @Column(name = "c_Role")
     private String cRole;
-    @Size(max = 50)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 50)
     @Column(name = "c_DisplayName")
     private String cDisplayName;
-    @OneToMany(mappedBy = "cRoleId")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cRoleId")
     private List<TbUser> tbUserList;
 
     public TbRole() {
@@ -58,9 +61,10 @@ public class TbRole implements Serializable {
         this.cId = cId;
     }
 
-    public TbRole(Integer cId, String cRole) {
+    public TbRole(Integer cId, String cRole, String cDisplayName) {
         this.cId = cId;
         this.cRole = cRole;
+        this.cDisplayName = cDisplayName;
     }
 
     public Integer getCId() {

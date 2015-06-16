@@ -45,10 +45,14 @@ public class TbStadiumImage implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "c_Path")
     private String cPath;
-    @Size(max = 100)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 100)
     @Column(name = "c_Title")
     private String cTitle;
-    @Size(max = 200)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 200)
     @Column(name = "c_Caption")
     private String cCaption;
     @JoinColumn(name = "c_StadiumId", referencedColumnName = "c_Id")
@@ -62,9 +66,11 @@ public class TbStadiumImage implements Serializable {
         this.cId = cId;
     }
 
-    public TbStadiumImage(Integer cId, String cPath) {
+    public TbStadiumImage(Integer cId, String cPath, String cTitle, String cCaption) {
         this.cId = cId;
         this.cPath = cPath;
+        this.cTitle = cTitle;
+        this.cCaption = cCaption;
     }
 
     public Integer getCId() {

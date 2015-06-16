@@ -57,7 +57,9 @@ public class TbReservation implements Serializable {
     @Size(min = 1, max = 20)
     @Column(name = "c_PhoneNumber")
     private String cPhoneNumber;
-    @Size(max = 50)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 50)
     @Column(name = "c_Email")
     private String cEmail;
     @Basic(optional = false)
@@ -93,10 +95,11 @@ public class TbReservation implements Serializable {
         this.cId = cId;
     }
 
-    public TbReservation(Integer cId, String cFullName, String cPhoneNumber, String cDate, double cPrice, String cVerifyCode, Date cCreatedDate) {
+    public TbReservation(Integer cId, String cFullName, String cPhoneNumber, String cEmail, String cDate, double cPrice, String cVerifyCode, Date cCreatedDate) {
         this.cId = cId;
         this.cFullName = cFullName;
         this.cPhoneNumber = cPhoneNumber;
+        this.cEmail = cEmail;
         this.cDate = cDate;
         this.cPrice = cPrice;
         this.cVerifyCode = cVerifyCode;

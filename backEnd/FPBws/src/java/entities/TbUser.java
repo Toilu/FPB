@@ -59,13 +59,19 @@ public class TbUser implements Serializable {
     @Size(min = 1, max = 50)
     @Column(name = "c_Password")
     private String cPassword;
-    @Size(max = 50)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 50)
     @Column(name = "c_FullName")
     private String cFullName;
-    @Size(max = 100)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 100)
     @Column(name = "c_Address")
     private String cAddress;
-    @Size(max = 20)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 20)
     @Column(name = "c_PhoneNumber")
     private String cPhoneNumber;
     @Basic(optional = false)
@@ -86,7 +92,7 @@ public class TbUser implements Serializable {
     private List<TbJoinSystemRequest> tbJoinSystemRequestList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
     private List<TbStadiumRating> tbStadiumRatingList;
-    @OneToMany(mappedBy = "cApprover")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cApprover")
     private List<TbStadiumReview> tbStadiumReviewList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
     private List<TbStadiumReview> tbStadiumReviewList1;
@@ -95,7 +101,7 @@ public class TbUser implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
     private List<TbStadiumStaff> tbStadiumStaffList;
     @JoinColumn(name = "c_RoleId", referencedColumnName = "c_Id")
-    @ManyToOne
+    @ManyToOne(optional = false)
     private TbRole cRoleId;
 
     public TbUser() {
@@ -105,10 +111,13 @@ public class TbUser implements Serializable {
         this.cId = cId;
     }
 
-    public TbUser(Integer cId, String cUserName, String cPassword, String cEmail, String cJoinDate, boolean cIsActive) {
+    public TbUser(Integer cId, String cUserName, String cPassword, String cFullName, String cAddress, String cPhoneNumber, String cEmail, String cJoinDate, boolean cIsActive) {
         this.cId = cId;
         this.cUserName = cUserName;
         this.cPassword = cPassword;
+        this.cFullName = cFullName;
+        this.cAddress = cAddress;
+        this.cPhoneNumber = cPhoneNumber;
         this.cEmail = cEmail;
         this.cJoinDate = cJoinDate;
         this.cIsActive = cIsActive;

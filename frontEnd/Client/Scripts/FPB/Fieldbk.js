@@ -4,6 +4,7 @@ var slotId = getUrlVars()["slotId"];
 
 var url = urlws["urlField"];
 var urlReservation = urlws["urlReservation"];
+
 console.log(stadiumId);
 console.log(date);
 console.log(slotId);
@@ -32,34 +33,41 @@ function load() {
 			}
 		}
 		console.log(reservationList);
-		
 		$.getJSON(url, function (result) {
-			temp = result; // lưu json trả về vào 1 biến tạm
-			if (stadiumId == null) { // kiểm tra xem có truyền tham số QUận vào k?
-				jsonObj = result;
 
-			} else
-				for (var i = 0; i < temp.length; ++i) {
-					if (temp[i].CStadiumId.CId == stadiumId) {
-						jsonObj.push(temp[i]);
+			$.getJSON(url, function (result) {
+				temp = result; // lưu json trả về vào 1 biến tạm
+				if (stadiumId == null) { // kiểm tra xem có truyền tham số QUận vào k?
+					jsonObj = result;
+
+				} else
+					for (var i = 0; i < temp.length; ++i) {
+						if (temp[i].CStadiumId.CId == stadiumId) {
+							jsonObj.push(temp[i]);
+						}
+					}
+				for (var i = 0; i < jsonObj.length; ++i) { // tìm phần tử trùng nhau giữa 2 mảng để xử lý
+					for (var j = 0; j < reservationList.length; ++j) {
+						if (jsonObj[i].CId == reservationList[j].CFieldId.CId) {
+							console.log('trùng nè: ' + jsonObj[i].CId);
+							var ind = jsonObj.indexOf(jsonObj[i]); // lấy thứ tự pt trong mảng
+							jsonObj.splice(i, 1); // xóa
+						}
 					}
 				}
+				console.log(jsonObj);
+				numPage = Math.floor(jsonObj.length / numPerPage) + 1;
+				if (numPagerPerPage <= numPage) {
+					numPagerTo = numPagerPerPage;
+				} else {
+					numPagerTo = numPage;
+				}
+				showData();
 
-			numPage = Math.floor(jsonObj.length / numPerPage) + 1;
-			if (numPagerPerPage <= numPage) {
-				numPagerTo = numPagerPerPage;
-			} else {
-				numPagerTo = numPage;
-			}
-			showData();
+			});
 
 		});
-
-		
-
 	});
-
-
 
 };
 
@@ -88,8 +96,8 @@ function showItems() {
 		.append('<tr><td><img src="' + images[i] + '" /></td>' +
 			'<td>' + jsonObj[i].CStadiumId.CName +
 			'</td><td>Sân số ' + jsonObj[i].CNumber +
-			'</td><td>Sân ' + jsonObj[i].CFieldTypeId.CFieldType + ' Người' +
-			'</td><td>' + jsonObj[i].CStadiumId.CPhone +
+			'</td><td><b>Sân ' + jsonObj[i].CFieldTypeId.CFieldType + ' Người' +
+			'</b></td><td>' + jsonObj[i].CStadiumId.CPhone +
 			'</td><td><a href="Field.htm?stadiumId=' + jsonObj[i].CId + '" class="btn btn-link">Đặt Sân</a></td></tr>');
 
 	}

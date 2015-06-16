@@ -58,7 +58,7 @@ public class TbStadiumReview implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date cCreateDate;
     @JoinColumn(name = "c_Approver", referencedColumnName = "c_Id")
-    @ManyToOne
+    @ManyToOne(optional = false)
     private TbUser cApprover;
     @JoinColumn(name = "c_UserId", referencedColumnName = "c_Id")
     @ManyToOne(optional = false)

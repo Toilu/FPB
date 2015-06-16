@@ -4,6 +4,8 @@ var slotId = getUrlVars()["slotId"];
 
 var url = urlws["urlField"];
 var urlReservation = urlws["urlReservation"];
+var urlPricetable = urlws["urlPricetable"];
+
 console.log(stadiumId);
 console.log(date);
 console.log(slotId);
@@ -15,6 +17,9 @@ var reservationTemp = new Array();
 
 var avaiableList = new Array(); //danh sách sân còn trống theo date - slot
 var avaiableTemp = new Array();
+
+var priceList = new Array(); // lấy bảng giá sân
+var priceTemp = new Array();
 
 var numPerPage = 10;
 var numPagerPerPage = 10;
@@ -32,38 +37,52 @@ function load() {
 			}
 		}
 		console.log(reservationList);
+		$.getJSON(urlPricetable, function (result) {
+			priceTemp = result;
 
-		$.getJSON(url, function (result) {
-			temp = result; // lưu json trả về vào 1 biến tạm
-			if (stadiumId == null) { // kiểm tra xem có truyền tham số QUận vào k?
-				jsonObj = result;
+			$.getJSON(url, function (result) {
+				temp = result; // lưu json trả về vào 1 biến tạm
+				if (stadiumId == null) { // kiểm tra xem có truyền tham số QUận vào k?
+					jsonObj = result;
 
-			} else
-				for (var i = 0; i < temp.length; ++i) {
-					if (temp[i].CStadiumId.CId == stadiumId) {
-						jsonObj.push(temp[i]);
+				} else
+					for (var i = 0; i < temp.length; ++i) {
+						if (temp[i].CStadiumId.CId == stadiumId) {
+							jsonObj.push(temp[i]);
+						}
+					}
+				for (var i = 0; i < jsonObj.length; ++i) { // tìm phần tử trùng nhau giữa 2 mảng để xử lý
+					for (var j = 0; j < reservationList.length; ++j) {
+						if (jsonObj[i].CId == reservationList[j].CFieldId.CId) {
+							console.log('trùng nè: ' + jsonObj[i].CId);
+							var ind = jsonObj.indexOf(jsonObj[i]); // lấy thứ tự pt trong mảng
+							jsonObj.splice(i, 1); // xóa
+						}
 					}
 				}
-			for (var i = 0; i < jsonObj.length; ++i) { // tìm phần tử trùng nhau giữa 2 mảng để xử lý
-				for (var j = 0; j < reservationList.length; ++j) {
-					if (jsonObj[i].CId == reservationList[j].CFieldId.CId) {
-						console.log('trùng nè: ' + jsonObj[i].CId);
-						var ind = jsonObj.indexOf(jsonObj[i]); // lấy thứ tự pt trong mảng
-						jsonObj.splice(i, 1); // xóa
+				for (var i = 0; i < jsonObj.length; ++i) { // tìm phần tử trùng nhau giữa 2 mảng để xử lý
+					for (var j = 0; j < priceTemp.length; ++j) {
+						if (jsonObj[i].CFieldTypeId.CId == priceTemp[j].CFieldTypeId.CId && priceTemp[j].CStadiumId.CId == stadiumId && priceTemp[j].CSlot.CId == slotId) {
+							priceList.push(priceTemp[j]);
+						}
 					}
 				}
-			}
 
-			numPage = Math.floor(jsonObj.length / numPerPage) + 1;
-			if (numPagerPerPage <= numPage) {
-				numPagerTo = numPagerPerPage;
-			} else {
-				numPagerTo = numPage;
-			}
-			showData();
+				console.log(jsonObj);
+				console.log('bảng giá nè: ');
+				console.log(priceList);
+
+				numPage = Math.floor(jsonObj.length / numPerPage) + 1;
+				if (numPagerPerPage <= numPage) {
+					numPagerTo = numPagerPerPage;
+				} else {
+					numPagerTo = numPage;
+				}
+				showData();
+
+			});
 
 		});
-
 	});
 
 };
@@ -88,13 +107,13 @@ function showItems() {
 
 		var index = i + 1
 			$('#dssb')
-			.html('Danh Sách Sân Bóng Hà Nội');
+			.html('Đặt Sân Bóng <b>' + jsonObj[i].CStadiumId.CName + '</b> Ngày: ' + date + ' - Thời Gian: ' + priceList[i].CSlot.CDescription);
 		$('#js')
 		.append('<tr><td><img src="' + images[i] + '" /></td>' +
 			'<td>' + jsonObj[i].CStadiumId.CName +
 			'</td><td>Sân số ' + jsonObj[i].CNumber +
-			'</td><td>Sân ' + jsonObj[i].CFieldTypeId.CFieldType + ' Người' +
-			'</td><td>' + jsonObj[i].CStadiumId.CPhone +
+			'</td><td><b>Sân ' + jsonObj[i].CFieldTypeId.CFieldType + ' Người' +
+			'</b></td><td>' + jsonObj[i].CStadiumId.CPhone +
 			'</td><td><a href="Field.htm?stadiumId=' + jsonObj[i].CId + '" class="btn btn-link">Đặt Sân</a></td></tr>');
 
 	}

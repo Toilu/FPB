@@ -41,9 +41,13 @@ public class TbFieldType implements Serializable {
     @NotNull
     @Column(name = "c_Id")
     private Integer cId;
+    @Basic(optional = false)
+    @NotNull
     @Column(name = "c_FieldType")
-    private Integer cFieldType;
-    @Size(max = 50)
+    private int cFieldType;
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 50)
     @Column(name = "c_Description")
     private String cDescription;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cFieldTypeId")
@@ -58,6 +62,12 @@ public class TbFieldType implements Serializable {
         this.cId = cId;
     }
 
+    public TbFieldType(Integer cId, int cFieldType, String cDescription) {
+        this.cId = cId;
+        this.cFieldType = cFieldType;
+        this.cDescription = cDescription;
+    }
+
     public Integer getCId() {
         return cId;
     }
@@ -66,11 +76,11 @@ public class TbFieldType implements Serializable {
         this.cId = cId;
     }
 
-    public Integer getCFieldType() {
+    public int getCFieldType() {
         return cFieldType;
     }
 
-    public void setCFieldType(Integer cFieldType) {
+    public void setCFieldType(int cFieldType) {
         this.cFieldType = cFieldType;
     }
 

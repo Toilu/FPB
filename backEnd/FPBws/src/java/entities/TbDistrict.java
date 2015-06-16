@@ -40,7 +40,9 @@ public class TbDistrict implements Serializable {
     @NotNull
     @Column(name = "c_Id")
     private Integer cId;
-    @Size(max = 30)
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 30)
     @Column(name = "c_District")
     private String cDistrict;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cDistrictId")
@@ -51,6 +53,11 @@ public class TbDistrict implements Serializable {
 
     public TbDistrict(Integer cId) {
         this.cId = cId;
+    }
+
+    public TbDistrict(Integer cId, String cDistrict) {
+        this.cId = cId;
+        this.cDistrict = cDistrict;
     }
 
     public Integer getCId() {
