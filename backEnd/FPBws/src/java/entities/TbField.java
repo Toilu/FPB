@@ -35,7 +35,6 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "TbField.findAll", query = "SELECT t FROM TbField t"),
     @NamedQuery(name = "TbField.findByCId", query = "SELECT t FROM TbField t WHERE t.cId = :cId"),
     @NamedQuery(name = "TbField.findByCNumber", query = "SELECT t FROM TbField t WHERE t.cNumber = :cNumber"),
-    @NamedQuery(name = "TbField.findByCFieldType", query = "SELECT t FROM TbField t WHERE t.cFieldType = :cFieldType"),
     @NamedQuery(name = "TbField.findByCIsActive", query = "SELECT t FROM TbField t WHERE t.cIsActive = :cIsActive")})
 public class TbField implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -51,25 +50,14 @@ public class TbField implements Serializable {
     private String cNumber;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "c_FieldType")
-    private int cFieldType;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "c_IsActive")
     private boolean cIsActive;
     @JoinColumn(name = "c_StadiumId", referencedColumnName = "c_Id")
     @ManyToOne(optional = false)
     private TbStadium cStadiumId;
-    @JoinColumn(name = "c_PriceId", referencedColumnName = "c_Id")
+    @JoinColumn(name = "c_FieldTypeId", referencedColumnName = "c_Id")
     @ManyToOne(optional = false)
-    private TbFieldPrice cPriceId;
-    @OneToMany(mappedBy = "cParentField")
-    private List<TbField> tbFieldList;
-    @JoinColumn(name = "c_ParentField", referencedColumnName = "c_Id")
-    @ManyToOne
-    private TbField cParentField;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cFieldId")
-    private List<TbPromotion> tbPromotionList;
+    private TbFieldType cFieldTypeId;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cFieldId")
     private List<TbReservation> tbReservationList;
 
@@ -80,10 +68,9 @@ public class TbField implements Serializable {
         this.cId = cId;
     }
 
-    public TbField(Integer cId, String cNumber, int cFieldType, boolean cIsActive) {
+    public TbField(Integer cId, String cNumber, boolean cIsActive) {
         this.cId = cId;
         this.cNumber = cNumber;
-        this.cFieldType = cFieldType;
         this.cIsActive = cIsActive;
     }
 
@@ -103,14 +90,6 @@ public class TbField implements Serializable {
         this.cNumber = cNumber;
     }
 
-    public int getCFieldType() {
-        return cFieldType;
-    }
-
-    public void setCFieldType(int cFieldType) {
-        this.cFieldType = cFieldType;
-    }
-
     public boolean getCIsActive() {
         return cIsActive;
     }
@@ -127,38 +106,12 @@ public class TbField implements Serializable {
         this.cStadiumId = cStadiumId;
     }
 
-    public TbFieldPrice getCPriceId() {
-        return cPriceId;
+    public TbFieldType getCFieldTypeId() {
+        return cFieldTypeId;
     }
 
-    public void setCPriceId(TbFieldPrice cPriceId) {
-        this.cPriceId = cPriceId;
-    }
-
-    @XmlTransient
-    public List<TbField> getTbFieldList() {
-        return tbFieldList;
-    }
-
-    public void setTbFieldList(List<TbField> tbFieldList) {
-        this.tbFieldList = tbFieldList;
-    }
-
-    public TbField getCParentField() {
-        return cParentField;
-    }
-
-    public void setCParentField(TbField cParentField) {
-        this.cParentField = cParentField;
-    }
-
-    @XmlTransient
-    public List<TbPromotion> getTbPromotionList() {
-        return tbPromotionList;
-    }
-
-    public void setTbPromotionList(List<TbPromotion> tbPromotionList) {
-        this.tbPromotionList = tbPromotionList;
+    public void setCFieldTypeId(TbFieldType cFieldTypeId) {
+        this.cFieldTypeId = cFieldTypeId;
     }
 
     @XmlTransient

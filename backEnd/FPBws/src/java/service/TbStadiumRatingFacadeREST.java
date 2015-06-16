@@ -36,14 +36,14 @@ public class TbStadiumRatingFacadeREST extends AbstractFacade<TbStadiumRating> {
 
     @POST
     @Override
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void create(TbStadiumRating entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void edit(@PathParam("id") Integer id, TbStadiumRating entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class TbStadiumRatingFacadeREST extends AbstractFacade<TbStadiumRating> {
 
     @GET
     @Path("{id}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public TbStadiumRating find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbStadiumRating> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbStadiumRating> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

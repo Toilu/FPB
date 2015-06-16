@@ -36,14 +36,14 @@ public class TbPriceTableFacadeREST extends AbstractFacade<TbPriceTable> {
 
     @POST
     @Override
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void create(TbPriceTable entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void edit(@PathParam("id") Integer id, TbPriceTable entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class TbPriceTableFacadeREST extends AbstractFacade<TbPriceTable> {
 
     @GET
     @Path("{id}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public TbPriceTable find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbPriceTable> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbPriceTable> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

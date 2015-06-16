@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>S&#226;n B&#243;ng - ĐẶT SÂN BÓNG ĐÁ ONLINE</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.new.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap-timepicker.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/css/jquery.dataTables.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/jquery.dataTables_themeroller.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/fpb.css" type="text/css">
+    <link rel="stylesheet" href="Content/css/fpb-responsive.css" type="text/css">
+    <link rel="stylesheet" href="Scripts/slider/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Content/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Content/css/socialcount-with-icons.css" type="text/css" media="screen" />
+    
+    <link rel="stylesheet" href="Content/css/custom.css" type="text/css">
+
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.autosize.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.dataTables.columnFilter.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- start header -->
+            <div class="span5 logo">
+                <a href="Home">
+                    <div class="row">
+                        <div class="span4 logo">
+                            <h1>ĐẶT SÂN BÓNG ĐÁ<span> ONLINE</span></h1>
+                            <p>&#9917;&#9917;&#9917;&#9917;&#9917;</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- collapse login form -->
+            <div class="panel-group span7" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title center">
+
+                                <p><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">ĐĂNG NHẬP</a> | <a href="Account/Register">ĐĂNG KÝ</a></p>
+
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="span6 pull-right header-account">
+                                <div class="header-user">
+                                        <div class="links">
+                                            <a href="Account/Register">Đăng Ký</a> |
+                <a href="Account/Recovery">Quên Mật Khẩu</a>
+                                        </div>
+                                        <form class="form-inline" action="/Account/Login" method="post">
+
+                                            <input name="UserName" class="header-login-input" type="text" placeholder="Tên Đăng Nhập">
+
+                                            <input name="Password" class="header-login-input" type="password" placeholder="Mật Khẩu">
+
+                                            <button class="btn btn-primary btn-header-login" type="submit">Đăng Nhập</button>
+
+                                        </form>
+                                </div>
+                                <!-- /account -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- end collapse login form -->
+
+
+        </div>
+        <div class="row">
+            <div class="span6 pull-right main_menu">
+                <div class="navbar">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                        <div class="nav-collapse">
+                            <ul class="nav nav-pills">
+                                <li><a href="Home">TRANG CHỦ</a></li>
+                                <li class="active"><a href="Stadium">SÂN BÓNG</a></li>
+                                <li><a href="Stadium/QuickSearch">TÌM SÂN NHANH</a></li>
+                                <li><a href="Stadium/Rivals">TÌM KÈO</a></li>                                
+                                <li><a href="Stadium/JoinUs">GIA NHẬP CHÚNG TÔI</a></li>
+                                <li><a href="Home/AboutUs">GIỚI THIỆU</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.nav-collapse -->
+                    </div>
+                </div>
+                <!-- /navbar -->
+            </div>
+        </div>
+        <!-- end header -->
+
+
+
+        <!-- render content -->
+        
+<h4 id="dssb">HỆ THỐNG SÂN BÓNG</h4>
+<div class="row">
+    <div class="span12">
+            <div class="row no-margin">
+                <table class="table table-condensed table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width: 60px;">#</th>
+                            <th style="width: 150px;">TÊN SÂN BÓNG</th>
+                            <th>ĐỊA CHỈ</th>
+                            <th style="width: 90px;">QUẬN</th>
+                            <th style="width: 110px;">SỐ ĐIỆN THOẠI</th>
+                            <th style="width: 70px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="js">
+                            <tr>
+                                <td>
+                                        <img src="Content/images/1_0_635349377285429127.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/1">Phương Đ&#244;</a></td>
+                                <td>37 Nguyễn Văn Lượng, 10, Q. G&#242; Vấp</td>
+                                <td>0918303875</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=1">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/2_0_635349377983799071.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/2">K334</a></td>
+                                <td>119 Trần Văn Dư, 13, Q. G&#242; Vấp</td>
+                                <td>01213727414</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=2">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/3_0_635349379178987432.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/3">Hải Sơn</a></td>
+                                <td>Đường số 20, 5, Q. G&#242; Vấp</td>
+                                <td>0909277792</td>
+                                <td class="rating-point">
+                                        <img src="Content/images/rating-star/100.png" />
+                                        <img src="Content/images/rating-star/100.png" />
+                                        <img src="Content/images/rating-star/100.png" />
+                                        <img src="Content/images/rating-star/100.png" />
+                                        <img src="Content/images/rating-star/100.png" />
+                                                                                                        </td>
+                                <td><a href="Stadium/Book?Stadium=3">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/4_0_635349379762440804.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/4">B&#236;nh An</a></td>
+                                <td>17 C&#226;y Tr&#226;m, 11, Q. G&#242; Vấp</td>
+                                <td>0862722830</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=4">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/5_0_635349380492462559.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/5">Phương Nam</a></td>
+                                <td>44/5 Phạm Văn Chi&#234;u, 9, Q. G&#242; Vấp</td>
+                                <td>0822149048</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=5">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/no-image.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/6">A41</a></td>
+                                <td>18C Cộng h&#242;a, 12, Q. T&#226;n B&#236;nh</td>
+                                <td>0902386860</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=6">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/7_0_635349381809497889.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/7">367</a></td>
+                                <td>367 Ho&#224;ng Hoa Th&#225;m, 12, Q. T&#226;n B&#236;nh</td>
+                                <td>088117244</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=7">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/8_0_635349382485216538.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/8">Ho&#224;ng Gia</a></td>
+                                <td>4 Trường Chinh, 4, Q. T&#226;n B&#236;nh</td>
+                                <td>0938948887</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=8">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/9_0_635349383039768256.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/9">Huỳnh Tấn</a></td>
+                                <td>18C Cộng h&#242;a, 4, Q. T&#226;n B&#236;nh</td>
+                                <td>0866589794</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=9">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/10_0_635349383937039577.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/10">Chảo Lửa</a></td>
+                                <td>18C Cộng H&#242;a, 12, Q. T&#226;n B&#236;nh</td>
+                                <td>0955800800</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=10">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/11_0_635349384571025839.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/11">Đ&#224;o Duy Anh</a></td>
+                                <td>21 Đ&#224;o Duy Anh, 14, Q. Ph&#250; Nhuận</td>
+                                <td>0838447700</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=11">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/12_0_635349385238093993.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/12">D3</a></td>
+                                <td>44 Đường D3, 25, Q. B&#236;nh Thạnh</td>
+                                <td>0909060202</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=12">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/13_0_635349385880120715.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/13">Hiệp T&#226;n</a></td>
+                                <td>161/3 Lũy B&#225;n B&#237;ch, P. Hiệp T&#226;n, Q. T&#226;n Ph&#250;</td>
+                                <td>0909552255</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=13">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/14_0_635349386712198307.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/14">Sake</a></td>
+                                <td>12 Đường 42, P. Linh Đ&#244;ng, Q. Thủ Đức</td>
+                                <td>0979466161</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=14">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/15_0_635349387731836627.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/15">Cao Đẳng C&#244;ng Nghệ Thủ Đức</a></td>
+                                <td>53 V&#245; Văn Ng&#226;n, P. Linh Chiểu, Q. Thủ Đức</td>
+                                <td>0979825050 </td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=15">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/16_0_635349388183202444.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/16">Nh&#224; Thiếu Nhi Thủ Đức</a></td>
+                                <td>281 V&#245; Văn Ng&#226;n, P. Linh Chiểu, Q. Thủ Đức</td>
+                                <td>0919709197</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=16">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <img src="Content/images/17_0_635349399562473301.jpg" style="width: 150px; height: auto;" />
+                                </td>
+                                <td><a href="Stadium/Details/17">Phương Nam 2</a></td>
+                                <td>44/5 Phạm Văn Chi&#234;u, 9, Q. G&#242; Vấp</td>
+                                <td>0822149048</td>
+                                <td class="rating-point">
+                                                                                                                <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                        <img src="Content/images/rating-star/00.png" />
+                                </td>
+                                <td><a href="Stadium/Book?Stadium=17">
+                                    <button class="btn-small btn-success">Đặt sân</button></a></td>
+                            </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+				<div class="pages">
+		<ul class="pagination pull-right" id="pager"></ul>
+	   </div>
+            </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+	load();
+    });
+</script>
+
+        <!-- end content -->
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="container">
+            <div class="row footer_section_pre">
+                <div class="span4">
+                    <h4>ĐẶT SÂN BÓNG ONLINE<span class="line"></span></h4>
+
+                    <p>Capstone Project 10, Innovation Building, Quang Trung Software Center, District 12, Hồ Chí Minh City</p>
+                    <p>
+                        Tel: +84-16-62194419<br />
+                        Fax: +84-16-62194419<br />
+                        Email: contact@fpb.com 
+                    </p>
+
+                    <ul data-facebook-action="recommend" data-url="#" class="socialcount socialcount-small recommend grade-a">
+                        <li class="facebook"><a title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=#"><span class="social-icon icon-facebook"></span><span class="count"></span></a></li>
+                        <li class="twitter"><a title="Share on Twitter" href="https://twitter.com/intent/tweet?text=#"><span class="social-icon icon-twitter"></span><span class="count"></span></a></li>
+                        <li class="googleplus"><a title="Share on Google Plus" href="https://plus.appsarea.com/share?url=#"><span class="social-icon icon-googleplus"></span><span class="count"></span></a></li>
+                    </ul>
+                    <br />
+                    <p class="copy">Capstone Project Group 10 &copy; 2014</p>
+
+                </div>
+                <div class="span2 links">
+                    <h4>LIÊN KẾT<span class="line"></span></h4>
+                    <p>
+                        <a href="Home/Index">Trang Chủ</a>
+                    </p>
+                    <p>
+                        <a href="Home/AboutUs">Giới Thiệu</a>
+                    </p>
+                    <p>
+                        <a href="Home/AboutUs">Hướng Dẫn</a>
+                    </p>
+                    <p>
+                        <a href="Home/Feedback">Góp Ý</a>
+                    </p>
+                    <p>
+                        <a href="mailto:footballpitchesbooking@gmail.com">Liên Hệ</a>
+                    </p>
+                </div>
+                <div class="span2 links">
+                    <h4>&nbsp<span class="line"></span></h4>
+                    <p>
+                        <a href="Stadium/JoinUs">Tham Gia Hệ Thống</a>
+                    </p>
+                    <p>
+                        <a href="Stadium/Index">Sân Bóng</a>
+                    </p>
+                    <p>
+                        <a href="Stadium/QuickSearch">Tìm Sân Nhanh</a>
+                    </p>
+                    <p>
+                        <a href="Stadium/Rivals">Tìm Kèo</a>
+                    </p>
+                    <p>
+                        <a href="#">Sân Khuyến Mãi</a>
+                    </p>
+                </div>
+                <div class="span4">
+                    <h4>TÀI TRỢ<span class="line"></span></h4>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/virgin4.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/ba2.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/delta3.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/ac_white.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="Content/bootstrap/js/bootstrap2.js"></script>
+    <script type="text/javascript" src="Content/bootstrap/js/bootstrap3.js"></script>
+    <script src="Content/bootstrap/js/collapse.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="Scripts/socialcount.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.ui.datepicker-vi-VN.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap-timepicker.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.price_format.2.0.js"></script>
+    <script type="text/javascript" src="Scripts/global.js"></script>
+	
+    <script type="text/javascript" src="Scripts/FPB/urlvar.js"></script>
+    <script type="text/javascript" src="Scripts/FPB/urlws.js"></script>
+    <script type="text/javascript" src="Scripts/FPB/images.js"></script>
+    <script type="text/javascript" src="Scripts/FPB/Stadium.js"></script>
+</body>
+</html>

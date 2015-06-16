@@ -30,16 +30,14 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(service.TbDistrictFacadeREST.class);
         resources.add(service.TbFieldFacadeREST.class);
-        resources.add(service.TbFieldPriceFacadeREST.class);
+        resources.add(service.TbFieldTypeFacadeREST.class);
         resources.add(service.TbJoinSystemRequestFacadeREST.class);
-        resources.add(service.TbMemberRankFacadeREST.class);
         resources.add(service.TbPriceTableFacadeREST.class);
-        resources.add(service.TbPromotionFacadeREST.class);
-        resources.add(service.TbPunishMemberFacadeREST.class);
-        resources.add(service.TbReportUserFacadeREST.class);
         resources.add(service.TbReservationFacadeREST.class);
         resources.add(service.TbRoleFacadeREST.class);
+        resources.add(service.TbSlotFacadeREST.class);
         resources.add(service.TbStadiumFacadeREST.class);
         resources.add(service.TbStadiumImageFacadeREST.class);
         resources.add(service.TbStadiumRatingFacadeREST.class);

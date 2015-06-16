@@ -36,14 +36,14 @@ public class TbUserFacadeREST extends AbstractFacade<TbUser> {
 
     @POST
     @Override
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void create(TbUser entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void edit(@PathParam("id") Integer id, TbUser entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class TbUserFacadeREST extends AbstractFacade<TbUser> {
 
     @GET
     @Path("{id}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public TbUser find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbUser> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbUser> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

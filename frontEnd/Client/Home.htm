@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>T&#236;m S&#226;n Nhanh - ĐẶT SÂN BÓNG ĐÁ ONLINE</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.new.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap-responsive.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap-timepicker.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/css/jquery.dataTables.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/jquery.dataTables_themeroller.css" type="text/css" />
+    <link rel="stylesheet" href="Content/css/fpb.css" type="text/css">
+    <link rel="stylesheet" href="Content/css/fpb-responsive.css" type="text/css">
+    <link rel="stylesheet" href="Scripts/slider/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Content/css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="Content/css/socialcount-with-icons.css" type="text/css" media="screen" />
+    
+    <link rel="stylesheet" href="Content/css/custom.css" type="text/css">
+
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.autosize.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.dataTables.columnFilter.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- start header -->
+            <div class="span5 logo">
+                <a href="Home">
+                    <div class="row">
+                        <div class="span4 logo">
+                            <h1>ĐẶT SÂN BÓNG ĐÁ<span> ONLINE</span></h1>
+                            <p>&#9917;&#9917;&#9917;&#9917;&#9917;</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- collapse login form -->
+            <div class="panel-group span7" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title center">
+
+                                <p><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">ĐĂNG NHẬP</a> | <a href="Account/Register">ĐĂNG KÝ</a></p>
+
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="span6 pull-right header-account">
+                                <div class="header-user">
+                                        <div class="links">
+                                            <a href="Account/Register">Đăng Ký</a> |
+                <a href="Account/Recovery">Quên Mật Khẩu</a>
+                                        </div>
+                                        <form class="form-inline" action="/Account/Login" method="post">
+
+                                            <input name="UserName" class="header-login-input" type="text" placeholder="Tên Đăng Nhập">
+
+                                            <input name="Password" class="header-login-input" type="password" placeholder="Mật Khẩu">
+
+                                            <button class="btn btn-primary btn-header-login" type="submit">Đăng Nhập</button>
+
+                                        </form>
+                                </div>
+                                <!-- /account -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- end collapse login form -->
+
+
+        </div>
+        <div class="row">
+            <div class="span6 pull-right main_menu">
+                <div class="navbar">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                        <div class="nav-collapse">
+                            <ul class="nav nav-pills">
+                                <li><a href="Home">TRANG CHỦ</a></li>
+                                <li><a href="Stadium">SÂN BÓNG</a></li>
+                                <li class="active"><a href="Stadium/QuickSearch">TÌM SÂN NHANH</a></li>
+                                <li><a href="Stadium/Rivals">TÌM KÈO</a></li>                                
+                                <li><a href="Stadium/JoinUs">GIA NHẬP CHÚNG TÔI</a></li>
+                                <li><a href="Home/AboutUs">GIỚI THIỆU</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.nav-collapse -->
+                    </div>
+                </div>
+                <!-- /navbar -->
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- render advertise -->
+            <div class="row" style="margin: 0 0 30px 0;">
+            <div class="advertise-banner">
+                <a href="mailto:footballpitchesbooking@gmail.com" ><img src="Content/images/contact-ads.gif" /></a>
+            </div> 
+            <div class="advertise-banner">
+                <a href="mailto:footballpitchesbooking@gmail.com" ><img src="Content/images/contact-ads.gif" /></a>
+            </div> 
+            <div class="advertise-banner">
+                <a href="mailto:footballpitchesbooking@gmail.com" ><img src="Content/images/contact-ads.gif" /></a>
+            </div> 
+    </div> 
+
+        <!-- end advertise -->
+
+
+        <!-- render content -->
+        
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#collapseTwo").collapse('show');
+        });
+    </script>
+<div class="row-fluid" id="findavailablesection">
+    <div class="span12">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">&#9917; tìm sân nhanh 
+                            <span class="glyphicon glyphicon-collapse-down pull-right"></span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h5><span class="special-font" style="font-weight: bold">chọn kiểu sân, ngày giờ và địa điểm</span></h5>
+                        <form method="post" action="/Stadium/QuickSearch" class="form-inline">
+                            <div class="row-fluid home">
+                                <div id="fieldtypeselector" class="span3">
+                                    <div class="room_selector" data-ftype="5" style="display: block;">
+                                        <h5 style="text-transform: none"><a href="#" class="pull-left"><i class="icon-chevron-left"></i></a>Sân 5 người<a href="#" class="pull-right "><i class="icon-chevron-right"></i></a></h5>
+                                        <a href="Content/css/images/stadiums/san5nguoi.jpg">
+                                            <img src="Content/css/images/stadiums/san5nguoi.jpg" alt="" /></a>
+                                        <p>Sân hình chữ nhật, chiều dài tối đa 42m và tối thiểu 25m, chiều rộng tối đa 25m và tối thiểu 15m.</p>
+                                    </div>
+                                    <div class="room_selector" data-ftype="7" style="display: none;">
+                                        <h5 style="text-transform: none"><a href="#" class="pull-left "><i class="icon-chevron-left"></i></a>Sân 7 người<a href="#" class="pull-right "><i class="icon-chevron-right"></i></a></h5>
+                                        <a href="Content/css/images/stadiums/san7nguoi.jpg">
+                                            <img src="Content/css/images/stadiums/san7nguoi.jpg" alt="" /></a>
+                                        <p>Sân hình chữ nhật, chiều dài tối đa 75m và tối thiểu 50m, chiều rộng tối đa 40m và tối thiểu 55m.</p>
+                                    </div>
+                                    <div class="room_selector" data-ftype="11" style="display: none;">
+                                        <h5 style="text-transform: none"><a href="#" class="pull-left "><i class="icon-chevron-left"></i></a>Sân 11 người<a href="#" class="pull-right "><i class="icon-chevron-right"></i></a></h5>
+                                        <a href="Content/css/images/stadiums/san7nguoi.jpg">
+                                            <img src="Content/css/images/stadiums/san11nguoi.png" alt="" /></a>
+                                        <p>Sân hình chữ nhật, chiều dài tối đa 120m và tối thiểu 90m, chiều rộng tối đa 90m và tối thiểu 45m. </p>
+                                    </div>
+                                    <input type="hidden" id="fieldType" name="FieldType" value="5" />
+                                    <script type="text/javascript">
+                                        $('#fieldtypeselector').bind('DOMSubtreeModified', function () {
+                                            $.each($(".room_selector"), function (index, obj) {
+                                                if (obj.style.display != "none") {
+                                                    $("#fieldType").val($(obj).data("ftype"));
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                                <div class="span3 home_calendar">
+                                    <div class="form-horizontal">
+                                        <div class="control-group">
+                                            <label class="control-label pull-left" for="startdate">Ngày</label>
+                                            <div class="controls">
+                                                <input type="text" name="StartDate" id="startdate" class="span2 input-date-collapse" value="14/06/2015" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="datepicker_from"></div>
+                                </div>
+                                <div class="span3 home_calendar home_picktime">
+                                    <div class="form-horizontal">
+                                        <div class="control-group">
+                                            <label class="control-label pull-left" for="starttime">Giờ</label>
+                                            <div class="controls">
+                                                <div class="input-append bootstrap-timepicker">
+                                                    <input name="StartTime" id="starttime" type="text" class="span2 input-time-collapse" value="11:00" />
+                                                    <script type="text/javascript">
+                                                        var timepicker = document.getElementById("starttime");
+                                                        timepicker.onkeydown = function () {
+                                                            return false;
+                                                        }
+                                                    </script>
+                                                    <span class="add-on"><i class="icon-time"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label pull-left" for="duration">Thời lượng</label>
+                                            <div class="controls">
+                                                <select class="select_duration" id="duration" name="Duration" data-cur="">
+                                                    <option value="1">60 phút</option>
+                                                    <option value="1.5">90 phút</option>
+                                                    <option value="2">120 phút</option>
+                                                    <option value="2.5">150 phút</option>
+                                                    <option value="3">180 phút</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label pull-left" for="district">Quận / Huyện</label>
+                                            <div class="controls">
+                                                <select name="District" class="select_district" id="district" data-cur="">
+                                                    <option value="">Tất cả</option>
+                                                    <option value="Q. 1">Q. 1</option>
+                                                    <option value="Q. 2">Q. 2</option>
+                                                    <option value="Q. 3">Q. 3</option>
+                                                    <option value="Q. 4">Q. 4</option>
+                                                    <option value="Q. 5">Q. 5</option>
+                                                    <option value="Q. 6">Q. 6</option>
+                                                    <option value="Q. 7">Q. 7</option>
+                                                    <option value="Q. 8">Q. 8</option>
+                                                    <option value="Q. 9">Q. 9</option>
+                                                    <option value="Q. 10">Q. 10</option>
+                                                    <option value="Q. 11">Q. 11</option>
+                                                    <option value="Q. 12">Q. 12</option>
+                                                    <option value="Q. Bình Tân">Q. Bình Tân</option>
+                                                    <option value="Q. Bình Thạnh">Q. Bình Thạnh</option>
+                                                    <option value="Q. Gò Vấp">Q. Gò Vấp</option>
+                                                    <option value="Q. Phú Nhuận">Q. Phú Nhuận</option>
+                                                    <option value="Q. Tân Bình">Q. Tân Bình</option>
+                                                    <option value="Q. Tân Phú">Q. Tân Phú</option>
+                                                    <option value="Q. Thủ Đức">Q. Thủ Đức</option>
+                                                    <option value="H. Bình Chánh">H. Bình Chánh</option>
+                                                    <option value="H. Củ Chi">H. Củ Chi</option>
+                                                    <option value="H. Hóc Môn">H. Hóc Môn</option>
+                                                    <option value="H. Nhà Bè">H. Nhà Bè</option>
+                                                    <option value="H. Cần Giờ">H. Cần Giờ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-large home-btn-find pull-right">Tìm kiếm</button>
+                                    </div>
+                                </div>
+
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('.datepicker_from').datepicker({
+                                            dateFormat: 'dd/mm/yy',
+                                            showOtherMonths: true,
+                                            numberOfMonths: 1,
+                                            altField: "#startdate",
+                                            altFormat: "dd/mm/yy",
+                                            minDate: 0,
+                                            onSelect: function (date) {
+                                            }
+                                        });
+                                        $(".datepicker_from").datepicker("setDate", "14/06/2015");
+                                        $('#starttime').timepicker({
+                                            showMeridian: false,
+                                            defaultTime: $('#starttime').val(),
+                                            minuteStep: 30,
+                                            showInputs: false
+                                        });
+                                        $.each($("select"), function (index, obj) {
+                                            $(obj).val($(obj).data("cur"));
+                                        });
+                                    });
+                                </script>
+
+                                <div class="span3">
+                                    <p>
+                                        Bạn là chủ của 1 sân bóng?
+                                    </p>
+                                    <p>
+                                        Bạn muôn sân bóng của bạn được hỗ trợ?
+                                    </p>
+                                    <p>
+                                        Hãy đến với hệ thống sân trực tuyến của chúng tôi.
+                                    </p>
+                                    <p>
+                                        <a href="Stadium/JoinUs" class="pull-right">Yêu cầu hỗ trợ >>></a>
+                                    </p>
+                                    <div class="span12 logo">
+                                        <div class="row">
+                                            <div class="span12 logo">
+                                                <h1>ĐẶT SÂN BÓNG ĐÁ<span> ONLINE</span></h1>
+                                                <p>&#9917;&#9917;&#9917;&#9917;&#9917;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- end content -->
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="container">
+            <div class="row footer_section_pre">
+                <div class="span4">
+                    <h4>ĐẶT SÂN BÓNG ONLINE<span class="line"></span></h4>
+
+                    <p>Capstone Project 10, Innovation Building, Quang Trung Software Center, District 12, Hồ Chí Minh City</p>
+                    <p>
+                        Tel: +84-16-62194419<br />
+                        Fax: +84-16-62194419<br />
+                        Email: contact@fpb.com 
+                    </p>
+
+                    <ul data-facebook-action="recommend" data-url="#" class="socialcount socialcount-small recommend grade-a">
+                        <li class="facebook"><a title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=#"><span class="social-icon icon-facebook"></span><span class="count"></span></a></li>
+                        <li class="twitter"><a title="Share on Twitter" href="https://twitter.com/intent/tweet?text=#"><span class="social-icon icon-twitter"></span><span class="count"></span></a></li>
+                        <li class="googleplus"><a title="Share on Google Plus" href="https://plus.appsarea.com/share?url=#"><span class="social-icon icon-googleplus"></span><span class="count"></span></a></li>
+                    </ul>
+                    <br />
+                    <p class="copy">Capstone Project Group 10 &copy; 2014</p>
+
+                </div>
+                <div class="span2 links">
+                    <h4>LIÊN KẾT<span class="line"></span></h4>
+                    <p>
+                        <a href="Home/Index">Trang Chủ</a>
+                    </p>
+                    <p>
+                        <a href="Home/AboutUs">Giới Thiệu</a>
+                    </p>
+                    <p>
+                        <a href="Home/AboutUs">Hướng Dẫn</a>
+                    </p>
+                    <p>
+                        <a href="Home/Feedback">Góp Ý</a>
+                    </p>
+                    <p>
+                        <a href="mailto:footballpitchesbooking@gmail.com">Liên Hệ</a>
+                    </p>
+                </div>
+                <div class="span2 links">
+                    <h4>&nbsp<span class="line"></span></h4>
+                    <p>
+                        <a href="Stadium/JoinUs">Tham Gia Hệ Thống</a>
+                    </p>
+                    <p>
+                        <a href="Stadium/Index">Sân Bóng</a>
+                    </p>
+                    <p>
+                        <a href="Stadium/QuickSearch">Tìm Sân Nhanh</a>
+                    </p>
+                    <p>
+                        <a href="Stadium/Rivals">Tìm Kèo</a>
+                    </p>
+                    <p>
+                        <a href="#">Sân Khuyến Mãi</a>
+                    </p>
+                </div>
+                <div class="span4">
+                    <h4>TÀI TRỢ<span class="line"></span></h4>
+                    <ul class="thumbnails">
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/virgin4.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/ba2.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/delta3.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="span2">
+                            <div class="thumbnail">
+                                <img src="Content/css/images/airlines/ac_white.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="Content/bootstrap/js/bootstrap2.js"></script>
+    <script type="text/javascript" src="Content/bootstrap/js/bootstrap3.js"></script>
+    <script src="Content/bootstrap/js/collapse.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="Scripts/socialcount.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.ui.datepicker-vi-VN.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap-timepicker.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.price_format.2.0.js"></script>
+    <script type="text/javascript" src="Scripts/global.js"></script>
+</body>
+</html>

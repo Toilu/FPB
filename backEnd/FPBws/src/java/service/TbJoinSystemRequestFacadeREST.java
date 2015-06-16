@@ -36,14 +36,14 @@ public class TbJoinSystemRequestFacadeREST extends AbstractFacade<TbJoinSystemRe
 
     @POST
     @Override
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void create(TbJoinSystemRequest entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void edit(@PathParam("id") Integer id, TbJoinSystemRequest entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class TbJoinSystemRequestFacadeREST extends AbstractFacade<TbJoinSystemRe
 
     @GET
     @Path("{id}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public TbJoinSystemRequest find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbJoinSystemRequest> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbJoinSystemRequest> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

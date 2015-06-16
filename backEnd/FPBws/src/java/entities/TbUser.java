@@ -40,7 +40,6 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "TbUser.findByCAddress", query = "SELECT t FROM TbUser t WHERE t.cAddress = :cAddress"),
     @NamedQuery(name = "TbUser.findByCPhoneNumber", query = "SELECT t FROM TbUser t WHERE t.cPhoneNumber = :cPhoneNumber"),
     @NamedQuery(name = "TbUser.findByCEmail", query = "SELECT t FROM TbUser t WHERE t.cEmail = :cEmail"),
-    @NamedQuery(name = "TbUser.findByCPoint", query = "SELECT t FROM TbUser t WHERE t.cPoint = :cPoint"),
     @NamedQuery(name = "TbUser.findByCJoinDate", query = "SELECT t FROM TbUser t WHERE t.cJoinDate = :cJoinDate"),
     @NamedQuery(name = "TbUser.findByCIsActive", query = "SELECT t FROM TbUser t WHERE t.cIsActive = :cIsActive")})
 public class TbUser implements Serializable {
@@ -76,10 +75,6 @@ public class TbUser implements Serializable {
     private String cEmail;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "c_Point")
-    private int cPoint;
-    @Basic(optional = false)
-    @NotNull
     @Size(min = 1, max = 10)
     @Column(name = "c_JoinDate")
     private String cJoinDate;
@@ -95,10 +90,6 @@ public class TbUser implements Serializable {
     private List<TbStadiumReview> tbStadiumReviewList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
     private List<TbStadiumReview> tbStadiumReviewList1;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cStaffId")
-    private List<TbPunishMember> tbPunishMemberList;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
-    private List<TbPunishMember> tbPunishMemberList1;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cMainOwner")
     private List<TbStadium> tbStadiumList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
@@ -106,23 +97,6 @@ public class TbUser implements Serializable {
     @JoinColumn(name = "c_RoleId", referencedColumnName = "c_Id")
     @ManyToOne
     private TbRole cRoleId;
-    @JoinColumn(name = "c_RankId", referencedColumnName = "c_Id")
-    @ManyToOne(optional = false)
-    private TbMemberRank cRankId;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cCreator")
-    private List<TbPromotion> tbPromotionList;
-    @OneToMany(mappedBy = "cReportUserId")
-    private List<TbReportUser> tbReportUserList;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cUserId")
-    private List<TbReportUser> tbReportUserList1;
-    @OneToMany(mappedBy = "cRivalFinder")
-    private List<TbReservation> tbReservationList;
-    @OneToMany(mappedBy = "cRivalId")
-    private List<TbReservation> tbReservationList1;
-    @OneToMany(mappedBy = "cApprover")
-    private List<TbReservation> tbReservationList2;
-    @OneToMany(mappedBy = "cUserId")
-    private List<TbReservation> tbReservationList3;
 
     public TbUser() {
     }
@@ -131,12 +105,11 @@ public class TbUser implements Serializable {
         this.cId = cId;
     }
 
-    public TbUser(Integer cId, String cUserName, String cPassword, String cEmail, int cPoint, String cJoinDate, boolean cIsActive) {
+    public TbUser(Integer cId, String cUserName, String cPassword, String cEmail, String cJoinDate, boolean cIsActive) {
         this.cId = cId;
         this.cUserName = cUserName;
         this.cPassword = cPassword;
         this.cEmail = cEmail;
-        this.cPoint = cPoint;
         this.cJoinDate = cJoinDate;
         this.cIsActive = cIsActive;
     }
@@ -197,14 +170,6 @@ public class TbUser implements Serializable {
         this.cEmail = cEmail;
     }
 
-    public int getCPoint() {
-        return cPoint;
-    }
-
-    public void setCPoint(int cPoint) {
-        this.cPoint = cPoint;
-    }
-
     public String getCJoinDate() {
         return cJoinDate;
     }
@@ -258,24 +223,6 @@ public class TbUser implements Serializable {
     }
 
     @XmlTransient
-    public List<TbPunishMember> getTbPunishMemberList() {
-        return tbPunishMemberList;
-    }
-
-    public void setTbPunishMemberList(List<TbPunishMember> tbPunishMemberList) {
-        this.tbPunishMemberList = tbPunishMemberList;
-    }
-
-    @XmlTransient
-    public List<TbPunishMember> getTbPunishMemberList1() {
-        return tbPunishMemberList1;
-    }
-
-    public void setTbPunishMemberList1(List<TbPunishMember> tbPunishMemberList1) {
-        this.tbPunishMemberList1 = tbPunishMemberList1;
-    }
-
-    @XmlTransient
     public List<TbStadium> getTbStadiumList() {
         return tbStadiumList;
     }
@@ -299,77 +246,6 @@ public class TbUser implements Serializable {
 
     public void setCRoleId(TbRole cRoleId) {
         this.cRoleId = cRoleId;
-    }
-
-    public TbMemberRank getCRankId() {
-        return cRankId;
-    }
-
-    public void setCRankId(TbMemberRank cRankId) {
-        this.cRankId = cRankId;
-    }
-
-    @XmlTransient
-    public List<TbPromotion> getTbPromotionList() {
-        return tbPromotionList;
-    }
-
-    public void setTbPromotionList(List<TbPromotion> tbPromotionList) {
-        this.tbPromotionList = tbPromotionList;
-    }
-
-    @XmlTransient
-    public List<TbReportUser> getTbReportUserList() {
-        return tbReportUserList;
-    }
-
-    public void setTbReportUserList(List<TbReportUser> tbReportUserList) {
-        this.tbReportUserList = tbReportUserList;
-    }
-
-    @XmlTransient
-    public List<TbReportUser> getTbReportUserList1() {
-        return tbReportUserList1;
-    }
-
-    public void setTbReportUserList1(List<TbReportUser> tbReportUserList1) {
-        this.tbReportUserList1 = tbReportUserList1;
-    }
-
-    @XmlTransient
-    public List<TbReservation> getTbReservationList() {
-        return tbReservationList;
-    }
-
-    public void setTbReservationList(List<TbReservation> tbReservationList) {
-        this.tbReservationList = tbReservationList;
-    }
-
-    @XmlTransient
-    public List<TbReservation> getTbReservationList1() {
-        return tbReservationList1;
-    }
-
-    public void setTbReservationList1(List<TbReservation> tbReservationList1) {
-        this.tbReservationList1 = tbReservationList1;
-    }
-
-    @XmlTransient
-    public List<TbReservation> getTbReservationList2() {
-        return tbReservationList2;
-    }
-
-    public void setTbReservationList2(List<TbReservation> tbReservationList2) {
-        this.tbReservationList2 = tbReservationList2;
-    }
-
-    @XmlTransient
-    public List<TbReservation> getTbReservationList3() {
-        return tbReservationList3;
-    }
-
-    public void setTbReservationList3(List<TbReservation> tbReservationList3) {
-        this.tbReservationList3 = tbReservationList3;
     }
 
     @Override

@@ -36,14 +36,14 @@ public class TbFieldFacadeREST extends AbstractFacade<TbField> {
 
     @POST
     @Override
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void create(TbField entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes("application/json; charset=UTF-8")
+    @Consumes({"application/xml", "application/json"})
     public void edit(@PathParam("id") Integer id, TbField entity) {
         super.edit(entity);
     }
@@ -56,21 +56,21 @@ public class TbFieldFacadeREST extends AbstractFacade<TbField> {
 
     @GET
     @Path("{id}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public TbField find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbField> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces("application/json; charset=UTF-8")
+    @Produces({"application/xml", "application/json"})
     public List<TbField> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }

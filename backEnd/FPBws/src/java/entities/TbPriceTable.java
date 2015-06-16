@@ -30,8 +30,6 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "TbPriceTable.findAll", query = "SELECT t FROM TbPriceTable t"),
     @NamedQuery(name = "TbPriceTable.findByCId", query = "SELECT t FROM TbPriceTable t WHERE t.cId = :cId"),
     @NamedQuery(name = "TbPriceTable.findByCDay", query = "SELECT t FROM TbPriceTable t WHERE t.cDay = :cDay"),
-    @NamedQuery(name = "TbPriceTable.findByCTimeFrom", query = "SELECT t FROM TbPriceTable t WHERE t.cTimeFrom = :cTimeFrom"),
-    @NamedQuery(name = "TbPriceTable.findByCTimeTo", query = "SELECT t FROM TbPriceTable t WHERE t.cTimeTo = :cTimeTo"),
     @NamedQuery(name = "TbPriceTable.findByCPrice", query = "SELECT t FROM TbPriceTable t WHERE t.cPrice = :cPrice")})
 public class TbPriceTable implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -40,25 +38,21 @@ public class TbPriceTable implements Serializable {
     @NotNull
     @Column(name = "c_Id")
     private Integer cId;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "c_Day")
-    private int cDay;
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "c_TimeFrom")
-    private double cTimeFrom;
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "c_TimeTo")
-    private double cTimeTo;
+    private Integer cDay;
     @Basic(optional = false)
     @NotNull
     @Column(name = "c_Price")
     private double cPrice;
-    @JoinColumn(name = "c_FieldPriceId", referencedColumnName = "c_Id")
+    @JoinColumn(name = "c_StadiumId", referencedColumnName = "c_Id")
     @ManyToOne(optional = false)
-    private TbFieldPrice cFieldPriceId;
+    private TbStadium cStadiumId;
+    @JoinColumn(name = "c_Slot", referencedColumnName = "c_Id")
+    @ManyToOne(optional = false)
+    private TbSlot cSlot;
+    @JoinColumn(name = "c_FieldTypeId", referencedColumnName = "c_Id")
+    @ManyToOne(optional = false)
+    private TbFieldType cFieldTypeId;
 
     public TbPriceTable() {
     }
@@ -67,11 +61,8 @@ public class TbPriceTable implements Serializable {
         this.cId = cId;
     }
 
-    public TbPriceTable(Integer cId, int cDay, double cTimeFrom, double cTimeTo, double cPrice) {
+    public TbPriceTable(Integer cId, double cPrice) {
         this.cId = cId;
-        this.cDay = cDay;
-        this.cTimeFrom = cTimeFrom;
-        this.cTimeTo = cTimeTo;
         this.cPrice = cPrice;
     }
 
@@ -83,28 +74,12 @@ public class TbPriceTable implements Serializable {
         this.cId = cId;
     }
 
-    public int getCDay() {
+    public Integer getCDay() {
         return cDay;
     }
 
-    public void setCDay(int cDay) {
+    public void setCDay(Integer cDay) {
         this.cDay = cDay;
-    }
-
-    public double getCTimeFrom() {
-        return cTimeFrom;
-    }
-
-    public void setCTimeFrom(double cTimeFrom) {
-        this.cTimeFrom = cTimeFrom;
-    }
-
-    public double getCTimeTo() {
-        return cTimeTo;
-    }
-
-    public void setCTimeTo(double cTimeTo) {
-        this.cTimeTo = cTimeTo;
     }
 
     public double getCPrice() {
@@ -115,12 +90,28 @@ public class TbPriceTable implements Serializable {
         this.cPrice = cPrice;
     }
 
-    public TbFieldPrice getCFieldPriceId() {
-        return cFieldPriceId;
+    public TbStadium getCStadiumId() {
+        return cStadiumId;
     }
 
-    public void setCFieldPriceId(TbFieldPrice cFieldPriceId) {
-        this.cFieldPriceId = cFieldPriceId;
+    public void setCStadiumId(TbStadium cStadiumId) {
+        this.cStadiumId = cStadiumId;
+    }
+
+    public TbSlot getCSlot() {
+        return cSlot;
+    }
+
+    public void setCSlot(TbSlot cSlot) {
+        this.cSlot = cSlot;
+    }
+
+    public TbFieldType getCFieldTypeId() {
+        return cFieldTypeId;
+    }
+
+    public void setCFieldTypeId(TbFieldType cFieldTypeId) {
+        this.cFieldTypeId = cFieldTypeId;
     }
 
     @Override

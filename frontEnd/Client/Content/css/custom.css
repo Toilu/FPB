@@ -1,0 +1,599 @@
+tr.read
+{
+}
+tr.unread
+{
+    font-weight: bold;
+}
+    tr.unread label
+    {
+        font-weight: bold;
+    }
+.navbar.webstaffnav .container {
+    max-width: 705px;
+    height: auto;
+}
+.navbar.webstaffnav .nav > li
+{
+    margin-bottom: 15px;
+}
+.inactiverow
+{
+    opacity: 0.7;
+}
+.btn-report
+{
+    color: white;
+    background-color: #1d611a;
+    margin-bottom: 5px;
+}
+#reportMessage.span8.alert
+{
+    width: 650px;
+}
+.span4.rival-item
+{
+    border: double 1px;
+    margin-left: 5px;
+    padding: 5px;
+}
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #f1ffa3;
+}
+.date_range_filter.form-control.hasDatepicker
+{
+    width: 85%;
+}
+.long .text_filter.form-control
+{
+    width: 98%;
+}
+.text_filter.form-control
+{
+    width: 85%;
+}
+table.dataTable thead th
+{
+    padding: 5px 10px;
+}
+.book-page .timepicker
+{
+    width: 190px;
+}
+.btn.groupbtn
+{
+    margin-left: 10px;
+}
+.btn-auto
+{
+    margin: 0;
+    width:auto;
+}
+.groupbtn2
+{
+    margin-left: 20px;
+}
+.btn-medium
+{
+    width: 220px;
+    height: 30px;
+}
+.btn-short
+{
+    width: 100px;
+}
+form h1
+{
+    font-size: 25px;
+}
+    form h1 small
+    {
+        font-size: 20px;
+        text-transform: none;
+    }
+footer
+{
+    margin-top: 20px;
+}
+div.ui-datepicker
+{
+    font-size: 11px;
+}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, legend span
+{
+    color: inherit;
+}
+.navbar .nav a
+{
+    font-size: 15px;
+}
+textarea
+{
+    resize: none;
+}
+
+h1, h2, h3, h4, h5, h6, .what_people_say p
+{
+    font-family: Arial,sans-serif;
+}
+
+.header-account
+{
+    width: 510px;
+    text-align: right;
+}
+
+.main_menu
+{
+    width: inherit;
+}
+
+.header-login-input
+{
+    width: 180px;
+}
+
+h3 .special-font
+{
+    color: #333333;
+}
+
+.special-font
+{
+    font-family: Arial;
+}
+
+.home #starttime.home-start-time
+{
+    width: 110px;
+}
+
+    .home #starttime.home-start-time[readonly]
+    {
+        cursor: pointer;
+    }
+
+.select_duration, .select_city, .select_district
+{
+    width: 137px;
+}
+
+.home .home_picktime .control-group
+{
+    margin-bottom: 20px;
+}
+
+.home-btn-find
+{
+    background-color: #B81007;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.2s linear 0s;
+    width: 100%;
+}
+
+    .home-btn-find:hover
+    {
+        color: #ffffff;
+        background-color: #f62115;
+    }
+
+.btn-header-login
+{
+    background-color: #B81007;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.2s linear 0s;
+}
+
+    .btn-header-login:hover
+    {
+        color: #ffffff;
+        background-color: #f62115;
+    }
+
+.home-btn-book
+{
+    background-color: #B81007;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.2s linear 0s;
+}
+
+    .home-btn-book:hover
+    {
+        color: #ffffff;
+        background-color: #f62115;
+    }
+
+.stadium-image
+{
+    position: relative;
+    height: 143px;
+    width: 300px;
+}
+
+.promotion-amount
+{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 30px;
+    color: white;
+    padding: 5px 15px 5px 5px;
+    background-color: orange;
+}
+
+.promotion-date
+{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 30px;
+    color: white;
+    padding: 5px 15px 5px 5px;
+    background-color: rgba(184, 16, 7, 0.8);
+    width: 280px;
+    text-align: right;
+}
+
+.promotion
+{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 30px;
+    color: white;
+    padding: 5px 15px 5px 5px;
+    background-color: rgba(184, 16, 7, 0.8);
+    width: 280px;
+}
+
+.stadium-image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.item-divider
+{
+    width: 100%;
+    display: block;
+    border: 1px solid #e38d13;
+    margin: 10px 0;
+}
+
+.stadium-name
+{
+    font-weight: bold;
+}
+
+.r-name
+{
+    font-weight: bold;
+}
+
+.rival-item
+{
+    min-height: 226px;
+}
+
+.typeahead.dropdown-menu
+{
+    min-width: 214px;
+}
+
+    .typeahead.dropdown-menu .active > a, .dropdown-menu .active > a:hover
+    {
+        background: none;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+td.table-cell-action
+{
+    text-align: center;
+}
+
+.trival-div
+{
+    width: 228px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(128, 128, 128, 0.17);
+}
+
+footer a
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.span5.logo, #accordion.panel-group.span7
+{
+    margin:0;
+}
+
+#findavailablesection .input-date-collapse, #findavailablesection .input-time-collapse
+{
+    width: 110px;
+}
+
+.no-margin 
+{
+    margin: 0px !important;    
+}
+
+.stadium-details h1
+{
+    margin: 0;
+    padding: 0;
+    color: #B81007;
+    font-weight: bold;
+}
+
+.stadium-side-panel 
+{
+    margin-top: 10px !important;
+    width: 378px;
+    border-right: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    box-shadow: 1px 1px 6px #E5E5E5;
+}
+
+.stadium-image-slide .image-show
+{
+    margin: 0 9px;
+    padding: 9px 0;
+    width: 360px;
+    height: 260px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 260px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.stadium-image-slide .image-show img
+{
+    margin: auto;
+    padding: 0;
+    max-width: 360px;
+    width: auto;
+    max-height: 250px;
+    height: auto;
+}
+
+.stadium-image-slide .image-list ul
+{
+    margin: 9px;
+    padding: 0;
+    white-space: nowrap;
+    width: 360px;
+    overflow-x: auto;
+    list-style: none;
+}
+
+.stadium-image-slide .image-list ul li
+{
+    display: inline-block;
+    padding: 0 9px;
+}
+
+.stadium-image-slide .image-list ul li img
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.stadium-promotion-list .promotion-show
+{
+    margin: 0 9px;
+    padding: 5px 0;
+    width: 360px;
+    height: 60px;
+    vertical-align: middle;
+    line-height: 55px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.stadium-promotion-list .promotion-show .discount-field
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px;
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    color: #B81007;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stadium-promotion-list .promotion-show .discount-label
+{
+    display: inline-block;
+    margin: 0;
+    padding: 14px 0;
+    width: auto;
+    height: 32px;
+    vertical-align: middle;
+    line-height: 16px;
+    color: #B81007;
+    font-size: 14px;
+}
+
+.stadium-promotion-list .promotion-show .discount-value
+{
+    background: url(../images/discount-bg.png) center center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.rating-point label
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.rating-point img
+{
+    margin-top: 1px;
+    float: left;
+}
+
+.stadium-info ul.details-menu
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 31px !important;
+    width: auto !important;
+    list-style: none !important;
+    border-left: 1px solid #E5E5E5 !important;
+    border-bottom: 1px solid #E5E5E5 !important;
+}
+
+.stadium-info ul.details-menu li
+{
+    background-color: #EEEEEE !important;
+    float: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    border-right: 1px solid #E5E5E5 !important;
+    border-top: 1px solid #E5E5E5 !important;
+    font-weight: bold !important;
+}
+
+.stadium-info ul.details-menu li:hover
+{
+    background-color: #EEEEEE !important;
+    float: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    border-right: 1px solid #E5E5E5 !important;
+    border-top: 1px solid #E5E5E5 !important;
+}
+
+.stadium-info ul.details-menu li.active
+{
+    background-color: #FFFFFF !important;
+    float: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    border-right: 1px solid #E5E5E5 !important;
+    border-top: 1px solid #E5E5E5 !important;
+    border-bottom: 1px solid #FFFFFF !important;
+}
+
+.stadium-info ul.details-menu li a
+{
+    text-decoration: none !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    padding: 0 20px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    font-family: Arial,sans-serif;
+    background: inherit;
+    color: #B81007;
+}
+
+.stadium-details-info
+{
+    width: 538px;
+    border: 1px solid #E5E5E5;
+    border-top: none;
+}
+
+.stadium-details-info .details-info
+{
+    width: 510px;
+    margin: 14px;
+    padding: 0;
+}
+
+.stadium-reviews .user-review
+{
+    margin: 0;
+    padding: 0;
+    width: 510px;
+    height: auto;
+    border-top: 1px solid #E5E5E5;
+    clear: both;
+}
+
+.stadium-reviews .user-review .user_avatar
+{
+    margin: 0;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+.stadium-reviews .user-review .content
+{
+    margin: 0;
+    padding: 10px 10px 10px 2px;
+    width: 430px;
+    height: auto;
+    float: right;
+}
+
+
+.stadium-image-list p
+{
+    text-align: center !important;
+}
+
+.advertise-banner
+{
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    margin: 0 5px;
+}
+
+.advertise-banner img
+{
+    width: 300px;
+    height: 80px;
+}
+
+.hide 
+{
+    display: none !important;
+}
+
+button.btn.btn-normal, input[type="submit"].btn.btn-normal, input[type="button"].btn.btn-normal 
+{
+    width: auto !important;
+}
