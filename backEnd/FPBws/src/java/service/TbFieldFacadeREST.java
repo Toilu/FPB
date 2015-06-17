@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package service;
 
 import entities.TbField;
+import entities.TbReservation;
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -27,6 +29,7 @@ import javax.ws.rs.Produces;
 @Stateless
 @Path("entities.tbfield")
 public class TbFieldFacadeREST extends AbstractFacade<TbField> {
+
     @PersistenceContext(unitName = "FPBwsPU")
     private EntityManager em;
 
@@ -36,14 +39,14 @@ public class TbFieldFacadeREST extends AbstractFacade<TbField> {
 
     @POST
     @Override
-    @Consumes({"application/xml", "application/json"})
+    @Consumes({"application/json; charset=UTF-8"})
     public void create(TbField entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({"application/xml", "application/json"})
+    @Consumes({"application/json; charset=UTF-8"})
     public void edit(@PathParam("id") Integer id, TbField entity) {
         super.edit(entity);
     }
@@ -56,21 +59,21 @@ public class TbFieldFacadeREST extends AbstractFacade<TbField> {
 
     @GET
     @Path("{id}")
-    @Produces({"application/xml", "application/json"})
+    @Produces({"application/json; charset=UTF-8"})
     public TbField find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces({"application/xml", "application/json"})
+    @Produces({"application/json; charset=UTF-8"})
     public List<TbField> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({"application/xml", "application/json"})
+    @Produces({"application/json; charset=UTF-8"})
     public List<TbField> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
@@ -82,9 +85,44 @@ public class TbFieldFacadeREST extends AbstractFacade<TbField> {
         return String.valueOf(super.count());
     }
 
+    @GET
+    @Path("stadiumid/{stadiumid}/date/{date}/slot/{slot}")
+    @Produces({"application/json; charset=UTF-8"})
+    public List<TbField> FieldFilter(
+            @PathParam("stadiumid") int stadiumid, @PathParam("date") String date, @PathParam("slot") int slot) {
+        // Lấy danh sách sân đã đặt
+        List<TbReservation> ListReservation = em.createNamedQuery("TbReservation.findAll").getResultList();
+        // lấy hết sân
+        List<TbField> ListField = em.createNamedQuery("TbField.findAll").getResultList();
+
+        for (int i = 0; i < ListReservation.size(); i++) {
+            for (int j = 0; j < ListField.size(); j++) {
+                if (ListReservation.get(i).getCFieldId().getCId().equals(ListField.get(j).getCId())) {
+                    if (ListReservation.get(i).getCDate().equals(date)) {
+                        if (ListReservation.get(i).getCSlotId().getCId().equals(slot)) {
+                            /*             
+                             TbField temp = new TbField();
+                             temp.setCId(ListField.get(j).getCId());
+                             temp.setCStadiumId(ListField.get(j).getCStadiumId());
+                             temp.setCNumber(ListField.get(j).getCNumber());
+                             temp.setCFieldTypeId(ListField.get(j).getCFieldTypeId());
+                             temp.setCIsActive(ListField.get(j).getCIsActive());
+                             Listtemps.add(temp);
+                             */
+                            ListField.remove(j);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        return ListField;
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }
